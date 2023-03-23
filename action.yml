@@ -1,0 +1,14 @@
+name: 'Custom Composite Action #2'
+description: 'Custom composite action in its own repository'
+
+inputs:
+  name:
+    description: 'Name'
+    required: true
+    default: 'World'
+
+runs:
+  using: 'composite'
+  steps:
+    - run: echo "This is a test, please ignore ${{ inputs.name }}..."
+      shell: bashs
