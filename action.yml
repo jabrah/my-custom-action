@@ -11,4 +11,4 @@ runs:
   using: 'composite'
   steps:
     - run: echo "This is a test, please ignore ${{ inputs.name }}..."
-      shell: bashs
+      shell: bash
